@@ -1,6 +1,4 @@
-def all_thing_is_obj(object: any) -> int:
-    """Prints the formatted type message and returns 42."""
-    
+def all_thing_is_obj(object: any) -> int:    
     type_map = {
         list: "List",
         tuple: "Tuple",
