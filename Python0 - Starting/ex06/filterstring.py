@@ -26,16 +26,16 @@ def main():
         if len(sys.argv) != 3:
             raise AssertionError("the arguments are bad")
 
-        string = sys.argv[1]
+        text = sys.argv[1]
+
         try:
             length = int(sys.argv[2])
         except ValueError:
             raise AssertionError("the arguments are bad")
 
-        filtered_words = list(
-            ft_filter(lambda word: len(word) > length, string.split())
-        )
-        print(filtered_words)
+        words = text.split()
+        result = [word for word in ft_filter(lambda w: len(w) > length, words)]
+        print(result)
 
     except AssertionError as e:
         print(f"AssertionError: {e}")
