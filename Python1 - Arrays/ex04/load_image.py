@@ -3,8 +3,7 @@ import numpy as np
 
 
 def ft_load(path: str):
-    """
-    Loads the image from the provided path, crops a centered 400x400 region,
+    """Loads the image from the provided path, crops a centered 400x400 region,
     converts it to grayscale (a single channel), prints its shape and pixel
     data, and returns the image as a 2D list of pixel values.
 
@@ -15,8 +14,8 @@ def ft_load(path: str):
 
     Returns:
         list[list[int]]: A 2D list (400x400) of pixel values (0-255) in
-        grayscale. If an error occurs, prints a clear error message and returns None.
-    """
+        grayscale. If an error occurs, prints a clear error message and returns
+        None."""
     try:
         if not path.lower().endswith((".jpg", ".jpeg")):
             raise ValueError(

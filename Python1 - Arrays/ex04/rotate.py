@@ -3,15 +3,13 @@ from load_image import ft_load
 
 
 def manual_transpose(matrix: list[list[int]]) -> list[list[int]]:
-    """
-    Manually transposes a 2D list (matrix).
+    """Manually transposes a 2D list (matrix).
 
     Parameters:
         matrix (list[list[int]]): The original 2D list.
 
     Returns:
-        list[list[int]]: The transposed 2D list.
-    """
+        list[list[int]]: The transposed 2D list."""
     rows = len(matrix)
     cols = len(matrix[0])
     # Create an empty transposed matrix with dimensions (cols x rows)
@@ -23,11 +21,9 @@ def manual_transpose(matrix: list[list[int]]) -> list[list[int]]:
 
 
 def main():
-    """
-    Loads "animal.jpeg", crops a centered 400×400 region in grayscale,
+    """Loads "animal.jpeg", crops a centered 400×400 region in grayscale,
     prints its shape and pixel data, manually transposes the matrix,
-    prints the new shape and data, and displays the transposed image.
-    """
+    prints the new shape and data, and displays the transposed image."""
     img = ft_load("animal.jpeg")
     if img is None:
         return

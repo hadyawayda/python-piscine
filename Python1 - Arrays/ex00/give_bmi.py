@@ -1,8 +1,7 @@
 def give_bmi(
     height: list[int | float], weight: list[int | float]
 ) -> list[float]:
-    """
-    Calculates BMI values given lists of heights (in meters) and weights (in
+    """Calculates BMI values given lists of heights (in meters) and weights (in
     kilograms).
 
     The BMI is computed using the formula: BMI = weight / (height ** 2).
@@ -17,8 +16,7 @@ def give_bmi(
 
     Raises:
         AssertionError: If height and weight are not both lists, have different
-        lengths, or contain non-numeric (non-int/non-float) values.
-    """
+        lengths, or contain non-numeric (non-int/non-float) values."""
     if not isinstance(height, list) or not isinstance(weight, list):
         raise AssertionError("height and weight must be lists")
     if len(height) != len(weight):
@@ -37,8 +35,7 @@ def give_bmi(
 
 
 def apply_limit(bmi: list[int | float], limit: int) -> list[bool]:
-    """
-    Applies a limit to a list of BMI values, returning a list of booleans
+    """Applies a limit to a list of BMI values, returning a list of booleans
     indicating whether each BMI is above the specified limit.
 
     Parameters:
@@ -51,8 +48,7 @@ def apply_limit(bmi: list[int | float], limit: int) -> list[bool]:
 
     Raises:
         AssertionError: If bmi is not a list or its elements are not numeric,
-                        or if limit is not an integer.
-    """
+                        or if limit is not an integer."""
     if not isinstance(bmi, list):
         raise AssertionError("bmi must be a list")
     if not all(isinstance(x, (int, float)) for x in bmi):

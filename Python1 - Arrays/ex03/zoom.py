@@ -4,12 +4,10 @@ from load_image import ft_load
 
 
 def main():
-    """
-    Loads the image "animal.jpeg", prints its original information, performs a
-    zoom operation by cropping a centered 400x400 region, converts that region
+    """Loads the image "animal.jpeg", prints its original information, performs
+    azoom operation by cropping a centered 400x400 region, converts that region
     to grayscale (1 channel), prints the new shape and pixel content, and then
-    displays the zoomed image with scale labels on the x and y axes.
-    """
+    displays the zoomed image with scale labels on the x and y axes."""
     try:
         # Load the image using ft_load
         img_arr = ft_load("animal.jpeg")

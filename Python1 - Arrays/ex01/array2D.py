@@ -2,8 +2,7 @@ import numpy as np
 
 
 def slice_me(family: list, start: int, end: int) -> list:
-    """
-    Takes a 2D array (list of lists) and two integer indices, prints the
+    """Takes a 2D array (list of lists) and two integer indices, prints the
     array's shape, then returns a truncated version of the array (using slicing
     along the first axis) while printing its new shape.
 
@@ -17,8 +16,7 @@ def slice_me(family: list, start: int, end: int) -> list:
 
     Raises:
         AssertionError: If family is not a list of lists or if the rows are not
-        the same size.
-    """
+        the same size."""
     if not isinstance(family, list) or len(family) == 0:
         raise AssertionError("family must be a non-empty list")
     row_length = None
